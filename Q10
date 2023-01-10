@@ -1,0 +1,52 @@
+#include <stdio.h>
+
+int main(){
+    
+    /*Calculadora só que colocando as operações +-/**/
+    
+    
+    double a,b;
+    char op;
+    
+    //printf("insira dois valores:");
+    scanf("%lf %lf", &a,&b);
+    
+    
+    //printf("insira a operacao");
+    scanf("%s", &op);
+    
+    
+    if((op=='+')||(op=='-')||(op=='/')||(op=='*')){
+        switch(op){
+        case '+':
+        printf("%.2lf + %.2lf = %.2lf ", a, b, a+b);
+        break;
+        
+        case '-':
+        printf("%.2lf - %.2lf = %.2lf ", a, b, a-b);
+        break;
+        
+        
+        if(b != 0){case '/':
+        printf("%.2lf / %.2lf = %.2lf ", a, b, a/b);
+        break;
+        }
+        else{printf("A operacao # eh invalida!");}
+        
+        case '*':
+        printf("%.2lf * %.2lf = %.2lf ", a, b, a*b);
+        break;
+    }
+    
+    
+    
+    
+    
+    
+    
+    }
+    
+    else{printf("A operacao # eh invalida!");}
+    
+    return 0;
+}
