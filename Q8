@@ -1,0 +1,62 @@
+#include <stdio.h>
+#include <math.h>
+
+
+int main(){
+    
+int a,b,c;
+double delta;
+
+//printf("insira os valores de a,b,c");
+scanf("%d %d %d", &a,&b,&c);
+
+delta=b*b-(4*a*c);
+
+if(a != 0){
+    
+        printf("Para os seguintes coeficientes: %d, %d e %d. O delta eh: %.2lf \n", a,b,c,delta);
+
+    if(delta>0){
+    printf("A equacao possui duas raizes reais distintas.\n");
+    printf("As raizes sao: %.2lf e %.2lf", ((-b-sqrt(delta))/2*a) , fabs((-b+sqrt(delta))/2*a));
+        
+}
+if(delta<0){
+    printf("A equacao nao possui raizes reais.");
+    
+}    
+if(delta==0){
+    
+    printf("A equacao possui duas raizes reais iguais.\n");
+    printf("As raizes sao: %.2lf e %.2lf", (-b+sqrt(delta))/2*a);
+}    
+}
+else{
+    printf("Se a = 0, nao temos uma equacao do segundo grau.");
+}    
+
+/*if(delta>0){
+    printf("A equacao possui duas raizes reais distintas\n");
+    printf("As raizes sao: %.2lf e %.2lf", ((-b-sqrt(delta))/2*a) , (-b+sqrt(delta))/2*a);
+        
+}
+if(delta<0){
+    printf("A equacao nao possui raizes reais.");
+    
+}    
+if(delta==0){
+    
+    printf("A equacao possui duas raizes reais iguais.\n");
+    printf("As raizes sao: %.2lf e %.2lf", (-b+sqrt(delta))/2*a);
+} */   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    return 0;
+}
