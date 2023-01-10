@@ -1,0 +1,68 @@
+#include <stdio.h>
+/*Circulo quadrado e triangulo equilatero
+as variaveis de entrada são:Uma letra maiuscula ou minuscula que seja a inicial da forma geometrica
+na segunda linha deve ser o tamanho do raio do circulo, lado do quadrado ou lado do triangulo equila
+tero
+
+Saída:a area da forma com duas casas decimais, na primeira linha e na segunda a forma geométrica
+se o usuario entrar algo diferente desses caracteres exiba a seguinte mensagem:"Entrada Invalida!"*/
+
+int main(){
+
+char figura;
+double lado;
+
+
+//printf("Qual figura?:");
+scanf("%s", &figura);
+//printf("qual o lado, raio da figura:");
+scanf("%lf", &lado);
+
+
+
+
+if(lado>0){
+    if((figura=='T')||(figura=='t')||(figura=='q')||(figura=='Q')||(figura=='c')||(figura=='C')){
+
+switch(figura){
+case ('T'):
+    printf("%.2lf\nTriangulo equilatero", (1.7/4)*lado*lado);
+    break;
+
+case ('t'):
+    printf("%.2lf\nTriangulo equilatero", (1.7/4)*lado*lado);
+    break;
+
+case('c'):
+    printf("%.2lf\nCirculo",lado*3.14*lado);
+    break;
+
+case('C'):
+    printf("%.2lf\nCirculo ",lado*3.14*lado);
+    break;
+case('Q'):
+    printf("%.2lf\nQuadrado", lado*lado);
+    break;
+case('q'):
+    printf("%.2lf\nQuadrado", lado*lado);    
+}
+}
+else{printf("Entrada invalida!");}
+}
+else{printf("Entrada invalida!");}
+
+return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+    
+
