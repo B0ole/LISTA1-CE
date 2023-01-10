@@ -2,22 +2,22 @@
 
 int main()
 {
-    int horas, minutos, minutos_adicionais;
+    int horas, min, min_adicionais;
 
-    // lê a entrada no formato "horas:minutos" e os minutoss adicionais
+    // lê a entrada no formato "horas:min" e os mins adicionais
     printf("");
-    scanf("%d:%d", &horas, &minutos);
+    scanf("%d:%d", &horas, &min);
     printf("");
-    scanf("%d", &minutos_adicionais);
+    scanf("%d", &min_adicionais);
 
-    // adiciona os minutoss adicionais à horas e minutos
-    minutos += minutos_adicionais;
-    horas += minutos / 60;
-    minutos %= 60;
+    // adiciona os mins adicionais à horas e min
+    min += min_adicionais;
+    horas += min / 60;
+    min %= 60;
     horas %= 24;
 
-    // imprime a horas e minutos atualizados
-    printf("%02d:%02d\n", horas, minutos);
+    // imprime a horas e min atualizados
+    printf("%02d:%02d\n", horas, min);
 
     return 0;
 }
