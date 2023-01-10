@@ -2,45 +2,45 @@
 #include <stdlib.h>
 #include <string.h>
 
-void sortList(char characters[3]) {
+void sortList(char Chac[3]) {
     int i, j;
     char temp;
     for (i = 0; i < 2; i++) {
         for (j = i + 1; j < 3; j++) {
-            if (characters[i] > characters[j]) {
-                temp = characters[i];
-                characters[i] = characters[j];
-                characters[j] = temp;
+            if (Chac[i] > Chac[j]) {
+                temp = Chac[i];
+                Chac[i] = Chac[j];
+                Chac[j] = temp;
             }
         }
     }
 }
 
 int main() {
-    char first_list[3], second_list[3];
+    char Lista_UM[3], Lista_DOIS[3];
     int i;
 
-    printf("Enter 3 letters for first list: ");
+    //printf("Enter 3 letters for first list: ");
     for (i = 0; i < 3; i++) {
-        scanf(" %c", &first_list[i]);
+        scanf(" %c", &Lista_UM[i]);
     }
 
-    printf("Enter 3 letters for second list: ");
+    //printf("Enter 3 letters for second list: ");
     for (i = 0; i < 3; i++) {
-        scanf(" %c", &second_list[i]);
+        scanf(" %c", &Lista_DOIS[i]);
     }
 
-    sortList(first_list);
-    sortList(second_list);
+    sortList(Lista_UM);
+    sortList(Lista_DOIS);
 
-    printf("First list in alphabetical order: ");
+    //printf("First list in alphabetical order: ");
     for (i = 0; i < 3; i++) {
-        printf("%c ", first_list[i]);
+        printf("%c ", Lista_UM[i]);
     }
     printf("\n");
-    printf("Second list in alphabetical order: ");
+    //printf("Second list in alphabetical order: ");
     for (i = 0; i < 3; i++) {
-        printf("%c ", second_list[i]);
+        printf("%c ", Lista_DOIS[i]);
     }
 
     return 0;
