@@ -1,0 +1,76 @@
+#include <stdio.h>
+
+
+
+int main(){
+    
+    
+    //pi é 3.141592
+
+    char dados, dados1;
+    
+    //printf("c ou e");
+    scanf("%s", &dados);
+    //printf("a ou v");
+    scanf("%s", &dados1);
+    
+    if((dados == 'c')||(dados == 'e')){
+    if(dados == 'c'){
+        if(dados1 == 'a'){
+        float raio,altura;
+        
+        //printf("Insira o raio e a altura do cilindro:");
+        scanf("%f %f", &raio, &altura);
+        printf("A area do cilindro de raio %.2f e altura %.2f eh:\n%.2f", raio, altura,((2*3.1415*raio*altura)+ (2*3.1415*raio*raio)));
+        }
+        else if(dados1 == 'v'){
+            float raio,altura;
+        //printf("Insira o raio e a altura do cilindro:");
+        scanf("%f %f", &raio, &altura);
+        printf("O volume do cilindro de raio %.2f e altura %.2f eh:\n%.2f",raio,altura, ((3.1415*raio*raio)*(altura)));
+        }
+    else{printf("Entrada invalida! Voce deve usar 'c'(cilindro) ou 'e'(esfera).");}
+    }
+    
+    if(dados =='e'){
+        if(dados1 == 'a'){
+            float raio;
+            //printf("insira o raio:");
+            scanf("%f", &raio);
+            printf("A area da esfera de raio %.2f eh:\n%.2f", raio, 4*3.1415*raio*raio);
+        }
+        else if(dados1 == 'v'){
+            float raio;
+            //printf("insira o raio:");
+            scanf("%f", &raio);
+            printf("O volume da esfera de raio %.2f eh:\n%.2f", raio, ((4*3.1415*raio*raio*raio)/3));
+            
+            
+            
+        }
+    
+          
+        else{printf("Entrada invalida! Entre com 'a' (area) ou 'v' (volume).");}
+    }
+    
+    }
+    else{printf("Entrada invalida! Voce deve usar 'c' (cilindro) ou 'e' (esfera).");}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    return 0;
+}
