@@ -4,17 +4,17 @@
 
 int main(){
     
-    double a,b;
+    double z1,z2;
     printf("");
-    scanf("%lf %lf", &a, &b);
+    scanf("%lf %lf", &z1, &z2);
     
-    printf ("Produto: %.4lf \n", a*b);
+    printf ("Produto: %.4lf \n", z1*z2);
     
-    if(b==0){
+    if(z2==0){
         printf("erro");
         }
     else{
-        printf("Razao: %.4lf", a/b);}
+        printf("Razao: %.4lf", z1/z2);}
     
     
     
