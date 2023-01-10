@@ -1,0 +1,47 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+void sortList(char list[3]) {
+    int i, j;
+    char temp;
+    for (i = 0; i < 2; i++) {
+        for (j = i + 1; j < 3; j++) {
+            if (list[i] > list[j]) {
+                temp = list[i];
+                list[i] = list[j];
+                list[j] = temp;
+            }
+        }
+    }
+}
+
+int main() {
+    char list1[3], list2[3];
+    int i;
+
+    //printf("Enter 3 letters for list 1: ");
+    for (i = 0; i < 3; i++) {
+        scanf(" %c", &list1[i]);
+    }
+
+    //printf("Enter 3 letters for list 2: ");
+    for (i = 0; i < 3; i++) {
+        scanf(" %c", &list2[i]);
+    }
+
+    sortList(list1);
+    sortList(list2);
+
+    //printf("List 1 in alphabetical order: ");
+    for (i = 0; i < 3; i++) {
+        printf("%c ", list1[i]);
+    }
+    printf("\n");
+    //printf("\nList 2 in alphabetical order: ");
+    for (i = 0; i < 3; i++) {
+        printf("%c ", list2[i]);
+    }
+
+    return 0;
+}
