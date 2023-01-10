@@ -3,53 +3,53 @@
 int main()
 {
     // Declare variables
-    int num1, num2, num3;
+    int Numero_UM, Numero_DOIS, Numero_TRES;
 
     // Read input from the user
     //printf("Enter three numbers: "); LInes for DEBUG
-    scanf("%d %d %d", &num1, &num2, &num3);
+    scanf("%d %d %d", &Numero_UM, &Numero_DOIS, &Numero_TRES);
 
     // Find the smallest number
-    if (num1 <= num2 && num1 <= num3)
+    if (Numero_UM <= Numero_DOIS && Numero_UM <= Numero_TRES)
     {
-        printf("%d \n", num1);
+        printf("%d \n", Numero_UM);
 
-        if (num2 <= num3)
+        if (Numero_DOIS <= Numero_TRES)
         {
-            printf("%d \n%d\n", num2, num3);
+            printf("%d \n%d\n", Numero_DOIS, Numero_TRES);
         }
         else
         {
-            printf("%d \n%d\n", num3, num2);
+            printf("%d \n%d\n", Numero_TRES, Numero_DOIS);
         }
     }
-    else if (num2 <= num1 && num2 <= num3)
+    else if (Numero_DOIS <= Numero_UM && Numero_DOIS <= Numero_TRES)
     {
-        printf("%d\n", num2);
+        printf("%d\n", Numero_DOIS);
 
-        if (num1 <= num3)
+        if (Numero_UM <= Numero_TRES)
         {
-            printf("%d \n%d\n", num1, num3);
+            printf("%d \n%d\n", Numero_UM, Numero_TRES);
         }
         else
         {
-            printf("%d \n%d\n", num3, num1);
+            printf("%d \n%d\n", Numero_TRES, Numero_UM);
         }
     }
     else
     {
-        printf("%d\n", num3);
+        printf("%d\n", Numero_TRES);
 
-        if (num1 <= num2)
+        if (Numero_UM <= Numero_DOIS)
         {
-            printf("%d \n%d\n", num1, num2);
+            printf("%d \n%d\n", Numero_UM, Numero_DOIS);
         }
         else
         {
-            printf("%d \n%d\n", num2, num1);
+            printf("%d \n%d\n", Numero_DOIS, Numero_UM);
         }
     }
 
     return 0;
 }
-3
+
