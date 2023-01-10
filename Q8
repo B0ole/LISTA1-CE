@@ -2,35 +2,35 @@
 #include <math.h>
 
 int main(){
-    int coefA,coefB,coefC;
-    double discriminant;
+    int Letra_A,LETRA_B,LETRA_C;
+    double DEL_TA;
 
     //printf("insira os valores de a,b,c");
-    scanf("%d %d %d", &coefA,&coefB,&coefC);
+    scanf("%d %d %d", &Letra_A,&LETRA_B,&LETRA_C);
 
-    discriminant = coefB*coefB-(4*coefA*coefC);
+    DEL_TA = LETRA_B*LETRA_B-(4*Letra_A*LETRA_C);
 
-    if(coefA != 0){
+    if(Letra_A != 0){
 
-        printf("Para os seguintes coeficientes: %d, %d e %d. O delta eh: %.2lf \n", coefA,coefB,coefC,discriminant);
+        printf("Para os seguintes coeficientes: %d, %d e %d. O delta eh: %.2lf \n", Letra_A,LETRA_B,LETRA_C,DEL_TA);
 
-        if(discriminant > 0){
+        if(DEL_TA > 0){
             printf("A equacao possui duas raizes reais distintas.\n");
-            printf("As raizes sao: %.2lf e %.2lf", ((-coefB-sqrt(discriminant))/2*coefA) , fabs((-coefB+sqrt(discriminant))/2*coefA));
+            printf("As raizes sao: %.2lf e %.2lf", ((-LETRA_B-sqrt(DEL_TA))/2*Letra_A) , fabs((-LETRA_B+sqrt(DEL_TA))/2*Letra_A));
 
         }
-        if(discriminant < 0){
+        if(DEL_TA < 0){
             printf("A equacao nao possui raizes reais.");
 
         }    
-        if(discriminant == 0){
+        if(DEL_TA == 0){
 
             printf("A equacao possui duas raizes reais iguais.\n");
-            printf("As raizes sao: %.2lf e %.2lf", (-coefB+sqrt(discriminant))/2*coefA);
+            printf("As raizes sao: %.2lf e %.2lf", (-LETRA_B+sqrt(DEL_TA))/2*Letra_A);
         }    
     }
     else{
-        printf("Se coefA = 0, nao temos uma equacao do segundo grau.");
+        printf("Se a = 0, nao temos uma equacao do segundo grau.");
     }   
     return 0;
 }
