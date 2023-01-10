@@ -2,14 +2,14 @@
 
 int main(){
     
-    //Calculadora
     
     
-    double numero1,numero2;
+    
+    double a1,a2;
     char op;
     
     //printf("insira dois valores:");
-    scanf("%lf %lf", &numero1,&numero2);
+    scanf("%lf %lf", &a1,&a2);
     
     
     //printf("insira a operacao");
@@ -19,22 +19,22 @@ int main(){
     if((op=='+')||(op=='-')||(op=='/')||(op=='*')){
         switch(op){
         case '+':
-        printf("%.2lf + %.2lf = %.2lf ", numero1, numero2, numero1+numero2);
+        printf("%.2lf + %.2lf = %.2lf ", a1, a2, a1+a2);
         break;
         
         case '-':
-        printf("%.2lf - %.2lf = %.2lf ", numero1, b, numero1-numero2);
+        printf("%.2lf - %.2lf = %.2lf ", a1, b, a1-a2);
         break;
         
         
         if(b != 0){case '/':
-        printf("%.2lf / %.2lf = %.2lf ",numero1, b, numero1/numero2);
+        printf("%.2lf / %.2lf = %.2lf ",a1, b, a1/a2);
         break;
         }
         else{printf("A operacao # eh invalida!");}
         
         case '*':
-        printf("%.2lf * %.2lf = %.2lf ", numero1, numero2, numero1*numero2);
+        printf("%.2lf * %.2lf = %.2lf ", a1, a2, a1*a2);
         break;
     }
     
