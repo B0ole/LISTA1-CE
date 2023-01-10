@@ -9,7 +9,7 @@ int main(){
     char op;
     
     //printf("insira dois valores:");
-    scanf("%lf %lf", &a,&b);
+    scanf("%lf %lf", &numero1,&numero2);
     
     
     //printf("insira a operacao");
