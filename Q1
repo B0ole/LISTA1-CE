@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+
+
+int main(){
+    
+    double a,b;
+    printf("");
+    scanf("%lf %lf", &a, &b);
+    
+    printf ("Produto: %.4lf \n", a*b);
+    
+    if(b==0){
+        printf("erro");
+        }
+    else{
+        printf("Razao: %.4lf", a/b);}
+    
+    
+    
+    
+    
+    
+    
+   return 0; 
+    
+    }
