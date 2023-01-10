@@ -3,32 +3,32 @@
 
 int main()
 {
-	int op;
-	double a,b;
+	int operacao;
+	double primeiro_numero,segundo_numero;
 	printf("");
-	scanf("%lf %lf ", &a, &b);
+	scanf("%lf %lf ", &primeiro_numero, &segundo_numero);
 	printf("");
-	scanf("%d", &op);
+	scanf("%d", &operacao);
 	
-	switch(op ){
+	switch(operacao){
 	    case 1:
-	    printf("%.3lf", a+b);
+	    printf("%.3lf", primeiro_numero+segundo_numero);
 	    break;
 	  
 	    case 2:
-	    printf("%.3lf", a-b);
+	    printf("%.3lf", primeiro_numero-segundo_numero);
 	    break;
 	    case 3:
-	    if((a==0)||(b==0)){
+	    if((primeiro_numero==0)||(segundo_numero==0)){
 	        printf("erro");}
-	    else{printf("%.3lf", a*b);}
+	    else{printf("%.3lf", primeiro_numero*segundo_numero);}
 	    
 	   break;
 	   
 	   case 4:
-	   if(/*(a==0)*||*/(b==0)){
+	   if(/*(primeiro_numero==0)*||*/(segundo_numero==0)){
 	    printf("erro");}
-	    else{printf("%.3lf", a/b);
+	    else{printf("%.3lf", primeiro_numero/segundo_numero);
 	    break;
 	    }
 	    
