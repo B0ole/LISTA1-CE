@@ -4,31 +4,31 @@
 int main()
 {
 	int operacao;
-	double primeiro_numero,segundo_numero;
+	double NUMERO_PRIMEIRO,NUMERO_DOIS;
 	printf("");
-	scanf("%lf %lf ", &primeiro_numero, &segundo_numero);
+	scanf("%lf %lf ", &NUMERO_PRIMEIRO, &NUMERO_DOIS);
 	printf("");
 	scanf("%d", &operacao);
 	
 	switch(operacao){
 	    case 1:
-	    printf("%.3lf", primeiro_numero+segundo_numero);
+	    printf("%.3lf", NUMERO_PRIMEIRO+NUMERO_DOIS);
 	    break;
 	  
 	    case 2:
-	    printf("%.3lf", primeiro_numero-segundo_numero);
+	    printf("%.3lf", NUMERO_PRIMEIRO-NUMERO_DOIS);
 	    break;
 	    case 3:
-	    if((primeiro_numero==0)||(segundo_numero==0)){
+	    if((NUMERO_PRIMEIRO==0)||(NUMERO_DOIS==0)){
 	        printf("erro");}
-	    else{printf("%.3lf", primeiro_numero*segundo_numero);}
+	    else{printf("%.3lf", NUMERO_PRIMEIRO*NUMERO_DOIS);}
 	    
 	   break;
 	   
 	   case 4:
-	   if(/*(primeiro_numero==0)*||*/(segundo_numero==0)){
+	   if(/*(NUMERO_PRIMEIRO==0)*||*/(NUMERO_DOIS==0)){
 	    printf("erro");}
-	    else{printf("%.3lf", primeiro_numero/segundo_numero);
+	    else{printf("%.3lf", NUMERO_PRIMEIRO/NUMERO_DOIS);
 	    break;
 	    }
 	    
