@@ -5,14 +5,12 @@
 int main(){
     
     
-    float DistanciadeFrenagem;
+    float Distancia;
     
     //printf("insira a distancia de frenagem: ");
-    scanf("%f", &DistanciadeFrenagem);
+    scanf("%f", &Distancia);
     
-    printf("A desaceleracao desse veiculo foi de aproximadamente: -%.2f m/s^2", ((111.11*111.11)/(2*DistanciadeFrenagem)));
-    
-    
+    printf("A desaceleracao desse veiculo foi de aproximadamente: -%.2f m/s^2", ((111.11*111.11)/(2*Distancia)));
     
     
     
@@ -20,7 +18,9 @@ int main(){
     
     
     
-    a
+    
+    
+    
     
     
     
