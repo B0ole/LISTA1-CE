@@ -7,23 +7,23 @@ int main(){
     
     //pi é 3.141592
 
-    char dados, dados1;
+    char dados, dados_adicionais;
     
     //printf("c ou e");
     scanf("%s", &dados);
     //printf("a ou v");
-    scanf("%s", &dados1);
+    scanf("%s", &dados_adicionais);
     
     if((dados == 'c')||(dados == 'e')){
     if(dados == 'c'){
-        if(dados1 == 'a'){
+        if(dados_adicionais == 'a'){
         float raio,altura;
         
         //printf("Insira o raio e a altura do cilindro:");
         scanf("%f %f", &raio, &altura);
         printf("A area do cilindro de raio %.2f e altura %.2f eh:\n%.2f", raio, altura,((2*3.1415*raio*altura)+ (2*3.1415*raio*raio)));
         }
-        else if(dados1 == 'v'){
+        else if(dados_adicionais == 'v'){
             float raio,altura;
         //printf("Insira o raio e a altura do cilindro:");
         scanf("%f %f", &raio, &altura);
@@ -33,13 +33,13 @@ int main(){
     }
     
     if(dados =='e'){
-        if(dados1 == 'a'){
+        if(dados_adicionais == 'a'){
             float raio;
             //printf("insira o raio:");
             scanf("%f", &raio);
             printf("A area da esfera de raio %.2f eh:\n%.2f", raio, 4*3.1415*raio*raio);
         }
-        else if(dados1 == 'v'){
+        else if(dados_adicionais == 'v'){
             float raio;
             //printf("insira o raio:");
             scanf("%f", &raio);
