@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main()
+{
+    int hora, minuto, minutos_adicionais;
+
+    // lê a entrada no formato "hora:minuto" e os minutos adicionais
+    printf("");
+    scanf("%d:%d", &hora, &minuto);
+    printf("");
+    scanf("%d", &minutos_adicionais);
+
+    // adiciona os minutos adicionais à hora e minuto
+    minuto += minutos_adicionais;
+    hora += minuto / 60;
+    minuto %= 60;
+    hora %= 24;
+
+    // imprime a hora e minuto atualizados
+    printf("%02d:%02d\n", hora, minuto);
+
+    return 0;
+}
